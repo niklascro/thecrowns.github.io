@@ -7,9 +7,9 @@ const FORMSPREE_URL = "https://formspree.io/f/DEINE_FORM_ID";
 const FOTOS = ["foto-1.jpg", "foto-2.jpg", "foto-3.jpg", "foto-4.jpg", "foto-5.jpg", "foto-6.jpg"];
 
 const INFOS = [
-  { titel: "Trauung", text: "Samstag, 12. Juni 2027, 14:00 Uhr\nStandesamt Hannover, Trammplatz 2" },
-  { titel: "Feier", text: "Ab 17:00 Uhr\nGut Beispielhof, Musterweg 5" },
-  { titel: "Anreise & Unterkunft", text: "Parkplätze am Gut. Zimmer können bis 1. Mai unter dem Stichwort „Hochzeit Anna & Jonas“ reserviert werden." },
+  { titel: "Trauung", text: "Freitag, 05. Juni 2027, 14:00 Uhr\nGasthaus Lecon, Belm" },
+  { titel: "Feier", text: "Ab 17:00 Uhr\nGasthaus Lecon, Belm" },
+  { titel: "Anreise", text: "Parkplätze Volksbank & Netto." },
   { titel: "Dresscode", text: "Festlich, gern in sommerlichen Farben." },
 ];
 
@@ -64,7 +64,7 @@ export default function Home() {
         <div className="galerie">
           {FOTOS.map((f) => (
             <button key={f} onClick={() => setOffen(f)} aria-label={`Foto ${f} vergrößern`}>
-              <img src={`/gallery/${f}`} alt="Foto von Anna und Jonas" loading="lazy" />
+              <img src={`/gallery/${f}`} alt="Foto von Niklas und Lena" loading="lazy" />
             </button>
           ))}
         </div>
@@ -96,7 +96,7 @@ export default function Home() {
         </form>
       </section>
 
-      <footer>Anna &amp; Jonas · 2027</footer>
+      <footer>Lena &amp; Niklas · 2027</footer>
     </main>
   );
 }
