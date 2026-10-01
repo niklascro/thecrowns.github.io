@@ -34,7 +34,7 @@ jobs:
         run: npm run build
 
       - name: Domain-Datei hinzufügen
-        run: echo "meine-domain.de" > out/CNAME   # <- HIER deine Strato-Domain eintragen
+        run: echo "thecrowns.de" > out/CNAME   # <- HIER deine Strato-Domain eintragen
 
       - name: Pages-Artefakt hochladen
         uses: actions/upload-pages-artifact@v3
